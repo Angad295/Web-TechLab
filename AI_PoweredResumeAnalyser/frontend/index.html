@@ -1,0 +1,35 @@
+<!--main page for the resume analyser-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="root">
+        <div id="header"> <div><h1>AI Powered Resume Analyser</h1></div>  
+        <div><p>Check the industry readiness of your resume</p></div>
+    </div>
+        <div class="container">
+            <h1>Analyse Resume</h1>
+            <form id="uploadForm" enctype="multipart/form-data">
+              <input type="file" id="resumeFile" name="resumeFile" accept=".pdf,.doc,.docx" required /> 
+              <button type="submit">Upload Resume</button>
+            </form>
+            <div id="result" title="Analysis Result"></div>
+    </div>
+    <div class="footer">
+        
+        <div id="suggestions">
+            <a href="sample.html">Examplery Templates</a> |
+        </div>
+        <div id="recommendIdeas">
+            <a href="suggestions.html">Recommended Ideas or Ask for more features</a>
+        </div>
+    </div>
+    
+</body>
+</html>

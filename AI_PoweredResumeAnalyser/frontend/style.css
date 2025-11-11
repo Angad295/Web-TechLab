@@ -1,0 +1,168 @@
+body {
+    background: #111; /* Fully dark background */
+    color: #fff;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Glossy white metal text effect */
+h1 {
+    font-size: 70px;
+    color: #fff;
+    background: linear-gradient(90deg, #fff 0%, #e0e0e0 40%, #bcbcbc 60%, #fff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    
+    text-shadow:
+        0 1px 4px rgba(255, 255, 255, 0.085),
+        0 0px 20px rgba(255, 255, 255, 0.122),
+        0 2px 2px #aaaaaa14;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+#header{
+    text-align: center;
+    margin-bottom: 40px;
+}
+#header p {
+    font-size: 20px;
+    color: #ccc;
+    margin-top: -15px;
+}
+.container {margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    text-align: center;
+    background: #222;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.footer {
+    margin-top: 50px;
+    text-align: center;
+    color: #888;
+    font-size: 14px;
+}
+a {
+    color: #888;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+    .sample {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      padding: 15px;
+      text-align: center;
+      transition: transform 0.2s ease;
+    }
+
+    .sample:hover {
+      transform: scale(1.03);
+    }
+
+    .sample img {
+      width: 80px;
+      margin: 10px auto;
+    }
+
+    .sample h2 {
+      margin-bottom: 8px;
+    }
+
+    .sample p {
+      font-size: 14px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+
+    .btn {
+      text-decoration: none;
+      padding: 8px 16px;
+      border-radius: 6px;
+      font-size: 14px;
+      color: white;
+      margin: 3px;
+    }
+
+    .view-btn {
+      background: #007bff;
+    }
+
+    .download-btn {
+      background: #28a745;
+    }
+    #header, .footer {
+        background-color: #555;
+    }
+   header {
+      background: #555;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    main {
+      max-width: 600px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    label {
+      font-weight: 600;
+      color: #333;
+    }
+
+    input, select, textarea {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 14px;
+      width: 100%;
+      box-sizing: border-box;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    button {
+      background: #555;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: background 0.2s ease;
+    }
+
+    button:hover {
+      background: #999;
+    }
+
+    .success-message {
+      display: none;
+      text-align: center;
+      color: green;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #555;
+      font-size: 14px;
+    }
