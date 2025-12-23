@@ -1,0 +1,56 @@
+<!--Create a webpage using frame, divide the page into 2 parts with navigation links on left side of page (width=20%) and content on right side (width=80%).On clicking the navigation links, the content should change in the right side frame.-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Webpage with Frames</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .frame-container {
+            display: flex;
+            height: 100vh;
+        }
+        .nav-frame {
+            width: 20%;
+            background-color: #f4f4f4;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .content-frame {
+            width: 80%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .nav-link {
+            display: block;
+            margin-bottom: 10px;
+            color: #333;
+            text-decoration: none;
+        }
+        .nav-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="frame-container">
+        <div class="nav-frame">
+            <h2>Navigation</h2>
+            <a href="Pratical1.html" target="contentFrame" class="nav-link">Page 1</a>
+            <a href="Pratical2.html" target="contentFrame" class="nav-link">Page 2</a>
+            <a href="Pratical4.html" target="contentFrame" class="nav-link">Page 3</a>
+        </div>
+        <div class="content-frame">
+            <iframe name="contentFrame" src="Pratical1.html" style="width:100%; height:100%; border:none;"></iframe>
+        </div>
+    </div>
+</body>
+</html>
+ 
+           

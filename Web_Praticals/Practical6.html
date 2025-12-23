@@ -1,0 +1,23 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Display Today's Date</title> 
+       
+</head> 
+<body> 
+    <h1 style="text-align: center;">Welcome to the Date Display Page</h1> 
+    <p id="dateDisplay" style="text-align: center; font-size: 20px; margin-top: 20px;"></p> 
+    <script> 
+            function displayDate() { 
+                  const today = new Date(); 
+                  const options = { year: 'numeric', month: 'long', day: 'numeric' }; 
+                  const formattedDate = today.toLocaleDateString(undefined, options); 
+                  document.getElementById('dateDisplay').innerText = "Today's Date: " + 
+formattedDate; 
+            } 
+            window.onload = displayDate; 
+      </script> 
+</body> 
+</html> 
